@@ -1,0 +1,17 @@
+<svg width="214.000000" height="205.000000" viewBox="0 0 214 205" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_1_12_dd" x="-0.656860" y="-0.944092" width="214.247925" height="205.637604" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feGaussianBlur in="BackgroundImage" stdDeviation="13.3333"/>
+			<feComposite in2="SourceAlpha" operator="in" result="effect_backgroundBlur_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_backgroundBlur_1" result="shape"/>
+		</filter>
+	</defs>
+	<g filter="url(#filter_1_12_dd)">
+		<path id="Vector 2014" d="M3.28 124.75C-3.09 119.06 -4.36 98.69 41.5 62.72C58.94 49.04 64.96 40 63.71 16.71C62.73 -1.65 121.15 -17.81 189.74 38.42C217.46 61.34 226.59 117.61 182.74 148.87C106.65 203.09 58.03 221.41 33.24 186.26C23.18 172 32.31 155.86 24.46 139.74C22.05 134.78 12.79 133.23 3.28 124.75Z" fill="#FFFFFF" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="Vector 2014" d="M41.5 62.72C58.94 49.04 64.96 40 63.71 16.71C62.73 -1.65 121.15 -17.81 189.74 38.42C217.46 61.34 226.59 117.61 182.74 148.87C106.65 203.09 58.03 221.41 33.24 186.26C23.18 172 32.31 155.86 24.46 139.74C22.05 134.78 12.79 133.23 3.28 124.75C-3.09 119.06 -4.36 98.69 41.5 62.72Z" stroke="#FAFAFA" stroke-opacity="1.000000" stroke-width="1.000000"/>
+	</g>
+</svg>
