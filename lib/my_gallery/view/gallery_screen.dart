@@ -9,6 +9,7 @@ import 'package:promedia_task/my_gallery/controller/provider/gallery_provider.da
 import 'package:promedia_task/my_gallery/controller/provider/state_on_upload_gallery_click.dart';
 import 'package:promedia_task/my_gallery/view/widgets/gallery_item.dart';
 import 'package:promedia_task/my_gallery/view/widgets/walved_container.dart';
+import 'package:promedia_task/utilties/app_size_config.dart';
 import 'package:promedia_task/utilties/widgets/custom_button_widget.dart';
 import 'package:promedia_task/utilties/widgets/default_text_widget.dart';
 import 'package:promedia_task/utilties/widgets/loading_widget.dart';
@@ -37,8 +38,7 @@ class GalleryScreen extends StatelessWidget {
         ),
         child: Stack(
           children: [
-             PositionedDirectional(end: 0.w,top: 0.h,child: WavedContainer(width: 180.w, height: 240.h, color: ThemeClass.moveColor)),
-           //PositionedDirectional(start: 40.w,top: 60.h,child:
+             PositionedDirectional(end: 0.w,top: 0.h,child: WavedContainer(width: 150.w, height: 180.h, color: ThemeClass.moveColor)),
             Consumer2<LoginProvider, GalleryProvider>(
               builder: (context, loginProvider, galleryProvider, _) {
                 return Padding(
@@ -56,14 +56,14 @@ class GalleryScreen extends StatelessWidget {
                               color: ThemeClass.blackColor,
                               fontSize: 30.sp, fontWeight: FontWeight.w500,),
                           ),
-                          const CircleAvatar(radius: 40,backgroundImage: AssetImage("assets/images/default_user.png"),)
+                          CircleAvatar(radius: 35.r,backgroundImage: AssetImage("assets/images/default_user.png"),)
                         ],
                       ),
                       SizedBox(height: 40.h),
                       Row(
                         children: [
                         CustomButton(
-                          width: 145.w, height: 100.h,
+                          width: SizeConfig.width > 500 ? SizeConfig.width / 5 : 143.w, height: 100.h,
                             textColor: ThemeClass.blackColor,
                             horizontalPadding: 10.w,
                             title: "Log Out",
@@ -72,7 +72,7 @@ class GalleryScreen extends StatelessWidget {
                             onTap: (){}),
                         SizedBox(width: 60.w),
                           UploadGalleryApi().isWaiting ? const Center(child: LoadingAnimationWidget(),): CustomButton(
-                          width: 145.w, height: 100.h,
+                          width: SizeConfig.width > 500 ? SizeConfig.width / 5 : 143.w, height: 100.h,
                             textColor: ThemeClass.blackColor,
                             horizontalPadding: 10.w,
                             title: "Upload",
